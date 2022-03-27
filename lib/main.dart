@@ -86,7 +86,6 @@ class _QpageState extends State<Qpage> {
             ),
           ),
         ),
-        //TODO: Add a Row here as your score keeper
       ],
     );
   }
