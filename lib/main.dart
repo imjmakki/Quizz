@@ -35,7 +35,7 @@ class _QpageState extends State<Qpage> {
   void checkAnswer(bool userPickedAnswer) {
     bool correctAnswer = quizBrain.getCorrectAnswer();
 
-    if (correctAnswer == true) {
+    if (userPickedAnswer == correctAnswer) {
       print('You got the right answer!!');
     } else {
       print('You did not get the right answer');
