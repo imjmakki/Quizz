@@ -70,8 +70,7 @@ class _QpageState extends State<Qpage> {
               ),
               onPressed: () {
                 //The user picked true.
-                bool correctAnswer =
-                    quizBrain.getQuestionText(questionNumber) as bool;
+                bool correctAnswer = quizBrain.getCorrectAnswer(questionNumber);
 
                 if (correctAnswer == true) {
                   print('You got the right answer!!');
@@ -100,8 +99,7 @@ class _QpageState extends State<Qpage> {
               ),
               onPressed: () {
                 //The user picked false.
-                bool correctAnswer =
-                    quizBrain.getQuestionText(questionNumber) as bool;
+                bool correctAnswer = quizBrain.getCorrectAnswer(questionNumber);
 
                 if (correctAnswer == false) {
                   print('You got the wrong answer!!');
