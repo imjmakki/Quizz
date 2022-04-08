@@ -28,7 +28,14 @@ class Qpage extends StatefulWidget {
 
 class _QpageState extends State<Qpage> {
   List<Icon> scoreKeeper = [];
-
+  List<String> questions = [
+    'You can lead a cow down stairs but not up stairs.',
+    false,
+    'Approximately one quarter of human bones are in the feet.',
+    true,
+    'A slug\'s blood is green.',
+    true,
+  ];
   @override
   Widget build(BuildContext context) {
     return Column(
