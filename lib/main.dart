@@ -93,6 +93,7 @@ class _QpageState extends State<Qpage> {
               ),
               onPressed: () {
                 //The user picked false.
+                questionNumber++;
               },
             ),
           ),
