@@ -43,7 +43,12 @@ class _QpageState extends State<Qpage> {
         ),
       );
     } else {
-      print('You did not get the right answer');
+      scoreKeeper.add(
+        Icon(
+          Icons.close,
+          color: Colors.red,
+        ),
+      );
     }
 
     setState(() {
