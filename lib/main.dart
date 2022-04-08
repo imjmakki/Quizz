@@ -36,7 +36,12 @@ class _QpageState extends State<Qpage> {
     bool correctAnswer = quizBrain.getCorrectAnswer();
 
     if (userPickedAnswer == correctAnswer) {
-      print('You got the right answer!!');
+      scoreKeeper.add(
+        Icon(
+          Icons.check,
+          color: Colors.green,
+        ),
+      );
     } else {
       print('You did not get the right answer');
     }
