@@ -12,4 +12,6 @@ class QuizBrain {
   String getQuestionText(int questionNumber) {
     return _questions[questionNumber].questionText;
   }
+
+  bool getCorrectAnswer(int questionNumber) {}
 }
