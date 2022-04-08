@@ -7,5 +7,3 @@ class Question {
     questionAnswer = a;
   }
 }
-
-Question newQuestion = Question(q: q, a: a);
