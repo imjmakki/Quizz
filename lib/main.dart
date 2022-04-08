@@ -32,7 +32,6 @@ class Qpage extends StatefulWidget {
 class _QpageState extends State<Qpage> {
   List<Icon> scoreKeeper = [];
 
-  int questionNumber = 0;
   @override
   Widget build(BuildContext context) {
     return Column(
