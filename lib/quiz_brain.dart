@@ -11,6 +11,10 @@ class QuizBrain {
     Question(q: 'A slug\'s blood is green.', a: true),
   ];
 
+  void nextQuestion() {
+    if (_questionNumber < _questions.length) {}
+  }
+
   String getQuestionText() {
     return _questions[_questionNumber].questionText;
   }
