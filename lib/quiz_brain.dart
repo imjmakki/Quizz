@@ -12,7 +12,9 @@ class QuizBrain {
   ];
 
   void nextQuestion() {
-    if (_questionNumber < _questions.length) {}
+    if (_questionNumber < _questions.length) {
+      _questionNumber++;
+    }
   }
 
   String getQuestionText() {
