@@ -27,6 +27,17 @@ class Qpage extends StatefulWidget {
 }
 
 class _QpageState extends State<Qpage> {
+  List<Icon> scoreKeeper = [
+    Icon(
+      Icons.check,
+      color: Colors.green,
+    ),
+    Icon(
+      Icons.close,
+      color: Colors.red,
+    ),
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -64,6 +75,12 @@ class _QpageState extends State<Qpage> {
               ),
               onPressed: () {
                 //The user picked true.
+                scoreKeeper.add(
+                  Icon(
+                    Icons.check,
+                    color: Colors.green,
+                  ),
+                );
               },
             ),
           ),
@@ -87,16 +104,7 @@ class _QpageState extends State<Qpage> {
           ),
         ),
         Row(
-          children: [
-            Icon(
-              Icons.check,
-              color: Colors.green,
-            ),
-            Icon(
-              Icons.close,
-              color: Colors.red,
-            ),
-          ],
+          children: scoreKeeper,
         ),
       ],
     );
