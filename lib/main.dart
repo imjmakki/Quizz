@@ -32,6 +32,8 @@ class Qpage extends StatefulWidget {
 class _QpageState extends State<Qpage> {
   List<Icon> scoreKeeper = [];
 
+  void checkAnswer(bool userPickedAnswer) {}
+
   @override
   Widget build(BuildContext context) {
     return Column(
