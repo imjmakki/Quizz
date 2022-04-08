@@ -78,7 +78,7 @@ class _QpageState extends State<Qpage> {
                 }
 
                 setState(() {
-                  questionNumber++;
+                  quizBrain.nextQuestion();
                 });
               },
             ),
@@ -107,7 +107,7 @@ class _QpageState extends State<Qpage> {
                 }
 
                 setState(() {
-                  questionNumber++;
+                  quizBrain.nextQuestion();
                 });
               },
             ),
