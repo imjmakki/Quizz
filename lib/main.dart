@@ -32,7 +32,19 @@ class Qpage extends StatefulWidget {
 class _QpageState extends State<Qpage> {
   List<Icon> scoreKeeper = [];
 
-  void checkAnswer(bool userPickedAnswer) {}
+  void checkAnswer(bool userPickedAnswer) {
+    bool correctAnswer = quizBrain.getCorrectAnswer();
+
+    if (correctAnswer == true) {
+      print('You got the right answer!!');
+    } else {
+      print('You did not get the right answer');
+    }
+
+    setState(() {
+      quizBrain.nextQuestion();
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -71,17 +83,6 @@ class _QpageState extends State<Qpage> {
               ),
               onPressed: () {
                 //The user picked true.
-                bool correctAnswer = quizBrain.getCorrectAnswer();
-
-                if (correctAnswer == true) {
-                  print('You got the right answer!!');
-                } else {
-                  print('You did not get the right answer');
-                }
-
-                setState(() {
-                  quizBrain.nextQuestion();
-                });
               },
             ),
           ),
