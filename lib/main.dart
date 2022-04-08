@@ -27,16 +27,7 @@ class Qpage extends StatefulWidget {
 }
 
 class _QpageState extends State<Qpage> {
-  List<Icon> scoreKeeper = [
-    Icon(
-      Icons.check,
-      color: Colors.green,
-    ),
-    Icon(
-      Icons.close,
-      color: Colors.red,
-    ),
-  ];
+  List<Icon> scoreKeeper = [];
 
   @override
   Widget build(BuildContext context) {
