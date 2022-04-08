@@ -44,7 +44,7 @@ class _QpageState extends State<Qpage> {
             padding: EdgeInsets.all(10.0),
             child: Center(
               child: Text(
-                quizBrain.getQuestionText(questionNumber),
+                quizBrain.getQuestionText(),
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 25.0,
@@ -69,7 +69,7 @@ class _QpageState extends State<Qpage> {
               ),
               onPressed: () {
                 //The user picked true.
-                bool correctAnswer = quizBrain.getCorrectAnswer(questionNumber);
+                bool correctAnswer = quizBrain.getCorrectAnswer();
 
                 if (correctAnswer == true) {
                   print('You got the right answer!!');
@@ -98,7 +98,7 @@ class _QpageState extends State<Qpage> {
               ),
               onPressed: () {
                 //The user picked false.
-                bool correctAnswer = quizBrain.getCorrectAnswer(questionNumber);
+                bool correctAnswer = quizBrain.getCorrectAnswer();
 
                 if (correctAnswer == false) {
                   print('You got the wrong answer!!');
