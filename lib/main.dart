@@ -36,6 +36,8 @@ class _QpageState extends State<Qpage> {
     'A slug\'s blood is green.',
     true,
   ];
+
+  int questionNumber = 0;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -48,7 +50,7 @@ class _QpageState extends State<Qpage> {
             padding: EdgeInsets.all(10.0),
             child: Center(
               child: Text(
-                'This is where the question text will go.',
+                questions[0],
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 25.0,
