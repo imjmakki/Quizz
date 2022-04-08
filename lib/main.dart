@@ -50,7 +50,7 @@ class _QpageState extends State<Qpage> {
             padding: EdgeInsets.all(10.0),
             child: Center(
               child: Text(
-                questions[questionNumber],
+                questions[questionNumber].questionText,
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 25.0,
@@ -75,7 +75,7 @@ class _QpageState extends State<Qpage> {
               ),
               onPressed: () {
                 //The user picked true.
-                bool correctAnswer = answers[questionNumber];
+                bool correctAnswer = questions[questionNumber].questionAnswer;
 
                 if (correctAnswer == true) {
                   print('You got the right answer!!');
