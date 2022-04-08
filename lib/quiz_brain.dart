@@ -1,7 +1,7 @@
 import 'package:quizz/question.dart';
 
 class QuizBrain {
-  int questionNumber = 0;
+  int _questionNumber = 0;
 
   List<Question> _questions = [
     Question(q: 'You can lead a cow down stairs but not up stairs.', a: false),
