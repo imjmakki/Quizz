@@ -83,6 +83,7 @@ class _QpageState extends State<Qpage> {
               ),
               onPressed: () {
                 //The user picked true.
+                checkAnswer(true);
               },
             ),
           ),
@@ -101,17 +102,7 @@ class _QpageState extends State<Qpage> {
               ),
               onPressed: () {
                 //The user picked false.
-                bool correctAnswer = quizBrain.getCorrectAnswer();
-
-                if (correctAnswer == false) {
-                  print('You got the wrong answer!!');
-                } else {
-                  print('You get the right answer');
-                }
-
-                setState(() {
-                  quizBrain.nextQuestion();
-                });
+                checkAnswer(false);
               },
             ),
           ),
