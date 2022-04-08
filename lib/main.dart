@@ -74,13 +74,15 @@ class _QpageState extends State<Qpage> {
                 ),
               ),
               onPressed: () {
+                setState(() {
+                  scoreKeeper.add(
+                    Icon(
+                      Icons.check,
+                      color: Colors.green,
+                    ),
+                  );
+                });
                 //The user picked true.
-                scoreKeeper.add(
-                  Icon(
-                    Icons.check,
-                    color: Colors.green,
-                  ),
-                );
               },
             ),
           ),
