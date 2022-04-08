@@ -11,11 +11,11 @@ class QuizBrain {
     Question(q: 'A slug\'s blood is green.', a: true),
   ];
 
-  String getQuestionText(int questionNumber) {
-    return _questions[questionNumber].questionText;
+  String getQuestionText() {
+    return _questions[_questionNumber].questionText;
   }
 
-  bool getCorrectAnswer(int questionNumber) {
-    return _questions[questionNumber].questionAnswer;
+  bool getCorrectAnswer() {
+    return _questions[_questionNumber].questionAnswer;
   }
 }
