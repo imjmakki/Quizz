@@ -71,10 +71,8 @@ class _QpageState extends State<Qpage> {
                 ),
               ),
               onPressed: () {
-                setState(() {
-                  questionNumber++;
-                });
                 //The user picked true.
+                questionNumber++;
               },
             ),
           ),
