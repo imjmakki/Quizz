@@ -13,5 +13,7 @@ class QuizBrain {
     return _questions[questionNumber].questionText;
   }
 
-  bool getCorrectAnswer(int questionNumber) {}
+  bool getCorrectAnswer(int questionNumber) {
+    return _questions[questionNumber].questionAnswer;
+  }
 }
