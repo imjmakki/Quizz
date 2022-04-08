@@ -73,6 +73,12 @@ class _QpageState extends State<Qpage> {
               ),
               onPressed: () {
                 //The user picked true.
+                bool correctAnswer = answers[questionNumber];
+                if (correctAnswer == true) {
+                  print('You got the right answer!!');
+                } else {
+                  print('You did not get the right answer');
+                }
                 setState(() {
                   questionNumber++;
                 });
