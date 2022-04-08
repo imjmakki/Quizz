@@ -33,7 +33,7 @@ class _QpageState extends State<Qpage> {
     'Approximately one quarter of human bones are in the feet.',
     'A slug\'s blood is green.'
   ];
-  List<bool> answers = [];
+  List<bool> answers = [false, true, true];
 
   int questionNumber = 0;
   @override
